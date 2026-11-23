@@ -1,0 +1,170 @@
+/*-----------------vars--------------------*/
+:root {
+    --nav_bg_color: rgb(29, 39, 56);
+    --main_bg_color: rgba(28, 46, 77, 0.616);
+    --txt_color: white;
+    --url_add_color: rgb(144, 177, 230);
+}
+ 
+/*-----------------main--------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1;
+}
+.bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 40px);
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 60px 20px 40px;
+    min-height: calc(100vh - 100px);
+}
+.main_menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: var(--nav_bg_color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main_menu a{
+    color: var(--txt_color);
+    text-decoration: none;
+    font-size: 18px;
+}
+.main_menu a:visited{
+    color: var(--txt_color);
+}
+.main_menu a:hover{
+    color: var(--url_add_color);
+}
+
+.title{
+    text-align: center;
+}
+.marg_t_10{
+    margin: 10px 0 ;
+}
+
+/*-----------------main_page--------------------*/
+
+.avatar_img{
+    border-radius: 10px;
+    max-width: 100%;
+}
+.info_block{
+    background-color: var(--main_bg_color);
+    padding: 10px 30px;
+    border-radius: 12px;
+    margin: 0;
+}
+.add_info{
+    margin: 0;
+    background-color: var(--main_bg_color);
+    padding: 10px 30px;
+    border-radius: 12px;
+}
+.add_info.first{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/*-----------------cert_page--------------------*/
+
+.cert_list{
+    display: inline-block;
+    width: 200px;
+    margin: 0 calc(100% / 2 - 100px);
+    list-style: none;
+    background-color: var(--main_bg_color);
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.cert_list li{
+    padding: 4px;
+}
+.cert_list a{
+    color: var(--txt_color);
+    text-decoration: none;
+}
+.cert_list a:visited{
+ color: var(--txt_color);
+}
+.cert_list a:hover{
+ cursor: pointer;
+ color: var(--url_add_color);
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+.gallery__elem{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery__elem img{
+    width: 100%;
+}
+
+/*-----------------contacts_page--------------------*/
+
+form{
+    margin: 0 calc(100% / 2 - 250px);
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: calc(100% - 4px);
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 20px 20px;
+    background-color: var(--main_bg_color);
+
+}
+label{
+    margin: 4px;
+    cursor: pointer;
+}
+form input, form select, form textarea{
+    margin-bottom: 10px;
+    font-family: serif;
+    font-size: 14px;
+    padding: 6px;
+}
+textarea{
+    resize: none;
+}
+button{
+    cursor: pointer;
+    padding: 6px;
+    margin-top: 20px;
+    width: fit-content;
+    margin: 10px calc(50% - 42px) 0;
+}
+
+.h_margin{
+    scroll-margin-top: 80px;
+    margin: 20px 0;
+}

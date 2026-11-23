@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотній зв'язок</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="bg">
+        <nav class="main_menu">
+            <a href="../index.html">Головна</a>
+            <a href="contacts.html">Зворотній зв'язок</a>
+            <a href="cert.html">Сертифікати</a>
+        </nav>
+        <h1 class="title">Зворотній зв'язок</h1>
+        <form action="#">
+            <label for="form__name">Ім'я</label>
+            <input type="text" id="form__name" name="f_name" required>
+            <label for="form__email">Електронна пошта</label>
+            <input type="email" id="form__email" name="f_email" required>
+            <label for="form__reason">Тема звернення</label>
+            <select name="f_reason" id="form__reason" required>
+                <option value="" disabled selected>Оберіть тему повідомлення</option>
+                <option value="reason_1">Запит на розробку вебсайту</option>
+                <option value="reason_2">Запит на проведення тренінгу</option>
+                <option value="reason_3">Консультація щодо IT-проєкту</option>
+                <option value="reason_4">Інше питання</option>
+            </select>
+            <label for="form__txt">Повідомлення</label>
+            <textarea name="f_txt" id="form__txt" required></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</body>
+</html>
